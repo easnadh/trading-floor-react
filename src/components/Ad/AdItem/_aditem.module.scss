@@ -1,0 +1,71 @@
+@import 'src/styles/base';
+
+.ad {
+   display: flex;
+   padding: 10px;
+   justify-content: center;
+   gap: 10px;
+   border-radius: 5px;
+   background: $field;
+
+   &__data {
+      display: flex;
+      width: 268px;
+      flex-direction: column;
+      gap: 10px;
+      font-size: 12px;
+   }
+
+   &__info {
+      height: 137px;
+   }
+
+   &__title {
+      color: $first-text;
+      font-size: 14px;
+      font-family: $font-main;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 150%;
+      padding-bottom: 5px;
+   }
+
+   &__author {
+      padding-bottom: 10px;
+      font-size: 10px;
+      color: $hovered-text;
+   }
+
+   &__description {
+      color: $second-text;
+      font-family: $font-main;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 130%;
+   }
+
+   &__tags {
+      padding: 10px 10px 0 0;
+      display: flex;
+      gap: 5px;
+   }
+
+   &__tag {
+      background: $hovered-button;
+      border-radius: 20px;
+      padding: 5px 10px;
+      font-size: 10px;
+   }
+
+   &__respond {
+      display: flex;
+      gap: 10px;
+      flex-direction: column;
+   }
+
+   &__img {
+      width: 161px;
+      height: 137px;
+      border-radius: 5px;
+   }
+}

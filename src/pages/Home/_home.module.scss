@@ -1,0 +1,10 @@
+@import 'src/styles/base';
+
+.home {
+   &__body {
+      margin-top: 10px;
+      gap: 10px;
+      display: grid;
+      justify-content: center;
+   }
+}
