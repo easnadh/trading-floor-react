@@ -1,13 +1,13 @@
-import c from './_modal.module.scss';
+import c from './Modal.module.scss';
 import React from 'react';
 
 type ModalProps = {
-   children: React.ReactElement | null;
+   children: React.ReactNode;
    visible: boolean;
-   setVisible: React.Dispatch<React.SetStateAction<boolean>>;
+   setVisible: (state: boolean) => void;
 };
 
-const Modal = ({ children, visible, setVisible }: ModalProps) => {
+export const Modal = ({ children, visible, setVisible }: ModalProps) => {
    const rootClasses = [c.modal];
    if (visible) {
       rootClasses.push(c.modal__active);
@@ -20,17 +20,16 @@ const Modal = ({ children, visible, setVisible }: ModalProps) => {
    return (
       <>
          <div className={rootClasses.join(' ')}>
-            <button
-               className={c.modal__close}
-               type='button'
-               onClick={closeModal}
-            >
-               <img src='src/assets/icons/close.svg' alt='close' />
-            </button>
-            <div className={c.modal__content}>{children}</div>
+            <div className={c.modal__content}>
+               {children}
+               <img
+                  className={c.modal__close}
+                  onClick={closeModal}
+                  src='src/assets/icons/close.svg'
+                  alt='close'
+               />
+            </div>
          </div>
       </>
    );
 };
-
-export default Modal;

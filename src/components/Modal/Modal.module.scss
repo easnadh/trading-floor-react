@@ -1,5 +1,3 @@
-@import 'src/styles/base';
-
 .modal {
    background-color: rgb(6, 17, 37, 80%);
    position: fixed;
@@ -10,25 +8,28 @@
    display: none;
 
    &__content {
-      background-color: $box;
-      padding: 40px 20px;
+      display: flex;
+      background-color: $color-box;
       border-radius: 15px;
-      gap: 30px;
+      //gap: 30px;
+      padding: 40px 20px;
    }
 
    &__active {
+      padding: 70px;
       display: inline-flex;
       flex-direction: column;
       align-items: center;
    }
 
    &__close {
+      margin: -10px;
       width: 60px;
       height: 60px;
       justify-content: center;
       align-items: center;
       border-radius: 30px;
-      background: $field;
+      background: $color-field;
    }
 
    img {

@@ -1,4 +1,4 @@
-const AdForm = () => {
+export const Create = () => {
    return (
       <>
          <form className='ad-form'>
@@ -20,5 +20,3 @@ const AdForm = () => {
       </>
    );
 };
-
-export default AdForm;

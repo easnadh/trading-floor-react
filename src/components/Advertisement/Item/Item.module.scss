@@ -1,12 +1,10 @@
-@import 'src/styles/base';
-
 .ad {
    display: flex;
    padding: 10px;
    justify-content: center;
    gap: 10px;
    border-radius: 5px;
-   background: $field;
+   background: $color-field;
 
    &__data {
       display: flex;
@@ -21,7 +19,7 @@
    }
 
    &__title {
-      color: $first-text;
+      color: $color-first-text;
       font-size: 14px;
       font-family: $font-main;
       font-style: normal;
@@ -33,11 +31,11 @@
    &__author {
       padding-bottom: 10px;
       font-size: 10px;
-      color: $hovered-text;
+      color: $color-hovered-text;
    }
 
    &__description {
-      color: $second-text;
+      color: $color-second-text;
       font-family: $font-main;
       font-style: normal;
       font-weight: 400;
@@ -51,7 +49,7 @@
    }
 
    &__tag {
-      background: $hovered-button;
+      background: $color-hovered-button;
       border-radius: 20px;
       padding: 5px 10px;
       font-size: 10px;

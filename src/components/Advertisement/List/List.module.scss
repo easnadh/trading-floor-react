@@ -1,9 +1,7 @@
-@import 'src/styles/base';
-
 .ad_list {
    max-width: 948px;
    border-radius: 5px;
-   background: $box;
+   background: $color-box;
    display: flex;
    flex-wrap: wrap;
    padding: 10px;

@@ -1,6 +1,6 @@
-@import 'src/styles/base';
-
 .header {
+   background-color: $color-header;
+
    &__btn {
       margin: 10px;
       padding: 10px 20px;

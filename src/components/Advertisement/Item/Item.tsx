@@ -1,11 +1,11 @@
-import c from './_aditem.module.scss';
+import c from './Item.module.scss';
 
-type AdItemProps = {
+type ItemProps = {
    title: string;
    description: string;
 };
 
-const AdItem = ({ title, description }: AdItemProps) => {
+export const Item = ({ title, description }: ItemProps) => {
    return (
       <>
          <div className={c.ad}>
@@ -29,13 +29,9 @@ const AdItem = ({ title, description }: AdItemProps) => {
                      <div className={c.ad__tag}>Обмен</div>
                   </div>
                </div>
-               <button className={c.second__button}>
-                  Перейти к объявлению
-               </button>
+               <button className='second__button'>Перейти к объявлению</button>
             </div>
          </div>
       </>
    );
 };
-
-export default AdItem;

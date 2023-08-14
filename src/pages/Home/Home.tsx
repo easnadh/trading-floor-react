@@ -1,18 +1,16 @@
-import AdList from '../../components/Ad/AdList/AdList.tsx';
-import c from './_home.module.scss';
-import Header from '../../components/Header/Header.tsx';
+import c from './Home.module.scss';
+import { Header } from '../../components/layout/Header/Header.tsx';
+import { List } from '../../components/Advertisement/List/List.tsx';
 
-const Home = () => {
+export const Home = () => {
    return (
       <>
          <main>
             <Header />
             <div className={c.home__body}>
-               <AdList />
+               <List />
             </div>
          </main>
       </>
    );
 };
-
-export default Home;

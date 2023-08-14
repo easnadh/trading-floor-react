@@ -1,5 +1,3 @@
-@import '../variables';
-
 button {
    cursor: pointer;
    display: flex;
@@ -10,13 +8,13 @@ button {
    align-self: stretch;
 
    border-radius: 3px;
-   color: $first-text;
+   color: $color-first-text;
 
    border-color: transparent;
-   background: $accent-light;
+   background: $color-accent-light;
 }
 
 .second__button {
    background-color: transparent;
-   border: 1px solid $first-text;
+   border: 1px solid $color-first-text;
 }

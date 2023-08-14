@@ -1,28 +1,25 @@
-import AdItem from '../AdItem/AdItem.tsx';
-import c from './_adlist.module.scss';
+import c from './List.module.scss';
+import { Item } from '../Item/Item.tsx';
 
-const AdList = () => {
+export const List = () => {
    return (
       <>
          <h2>Последние объявления</h2>
          <div className={c.ad_list}>
-            <AdItem
-               title='Вкусная шаурма из Макимы'
-               description='description'
-            />
-            <AdItem
+            <Item title='Вкусная шаурма из Макимы' description='description' />
+            <Item
                title='Вкусная шаурма из Макимы'
                description='Шаурма может содержать различные ингредиенты, которые могут быть полезны для организма. Например, она может...'
             />
-            <AdItem
+            <Item
                title='Вкусная шаурма из Макимы'
                description='Шаурма может содержать различные ингредиенты, которые могут быть полезны для организма. Например, она может...'
             />
-            <AdItem
+            <Item
                title='Вкусная шаурма из Макимы'
                description='Шаурма может содержать различные ингредиенты, которые могут быть полезны для организма. Например, она может...'
             />
-            <AdItem
+            <Item
                title='Вкусная шаурма из Макимы'
                description='Шаурма может содержать различные ингредиенты, которые могут быть полезны для организма. Например, она может...'
             />
@@ -30,5 +27,3 @@ const AdList = () => {
       </>
    );
 };
-
-export default AdList;

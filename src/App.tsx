@@ -1,11 +1,14 @@
-import Home from './pages/Home/Home.tsx';
+import { Home } from './pages/Home/Home.tsx';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { Login } from './pages/Login/Login.tsx';
 
-function App() {
+export const App = () => {
    return (
-      <div className='App'>
-         <Home />
-      </div>
+      <BrowserRouter>
+         <Routes>
+            <Route path='/' element={<Home />} />
+            <Route path='/login' element={<Login />} />
+         </Routes>
+      </BrowserRouter>
    );
-}
-
-export default App;
+};
